@@ -552,6 +552,11 @@ Tinggal ubah config algoritma load balancing sesuai dengan yang diinginkan. Kemu
 
 **CHECKING:** Lakukan perbandingan dari 4 algoritma tersebut
 
+### Grafik dan Analisis
+![image](https://github.com/user-attachments/assets/ca15d2c0-706f-4253-9afb-a182c7ea43a3)
+
+Least Connection memiliki performa terbaik dalam hal jumlah request per detik. Ini menunjukkan bahwa algoritma ini lebih efektif dalam menangani beban tinggi dibandingkan dengan algoritma lainnya seperti IP Hash, Round Robin, dan Hash.
+
 ## Soal 9
 ### Untuk mengerjakan soal ini, lakukan comment pada bagian "server..." di script soal7.sh yang ada pada Colossal. Berikut adalah bagian yang dimaksud
 ```
