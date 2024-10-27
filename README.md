@@ -569,12 +569,22 @@ echo ' upstream worker {
     server 10.83.2.4;
 }
 ```
+
 - 3 Worker
-- 
+
 ![Screenshot 2024-10-26 235935](https://github.com/user-attachments/assets/805b3d95-58ae-4152-97b9-abad5c958725)
 
 - 2 Worker
+![WhatsApp Image 2024-10-27 at 09 39 33_e1f2e34d](https://github.com/user-attachments/assets/01e1f9e0-48e1-44c1-ba8e-9288c4cd08f7)
+
 - 1 Worker
+![WhatsApp Image 2024-10-27 at 09 38 03_c5f49b4e](https://github.com/user-attachments/assets/3278e9d9-f828-4bfa-914a-7ec00c3f12f9)
+
+
+### Grafik dan Analisis
+![image](https://github.com/user-attachments/assets/acb9310b-58db-4f5a-8436-3d3f0fc55d01)
+
+peningkatan jumlah worker dari 1 menjadi 2 atau 3 justru menurunkan performa RPS secara signifikan, yang mungkin disebabkan oleh faktor bottleneck atau ineffisiensi dalam pengaturan worker di lingkungan ini
 
 ## Soal 10
 ### Jalankan script berikut di Colossal
