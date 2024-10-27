@@ -535,12 +535,19 @@ service bind9 restart
 ## Soal 8
 Tinggal ubah config algoritma load balancing sesuai dengan yang diinginkan. Kemudian cek melalui client dengan command `ab -n 1000 -c 75 http://eldia.it40.com/`
 - Least Connection
+
 ![Screenshot 2024-10-26 233744](https://github.com/user-attachments/assets/39b22343-2f82-48b6-8202-6b7614acb28e)
+
 - IP Hash
+
 ![Screenshot 2024-10-26 234110](https://github.com/user-attachments/assets/13fe2282-55fc-4a63-bd11-b207698e205d)
+
 - Round Robin (default NGINX)
+
 ![Screenshot 2024-10-26 234903](https://github.com/user-attachments/assets/bda6a208-2b1f-4415-8fbb-b7b2c2341977)
+
 - Hash
+
 ![Screenshot 2024-10-26 235506](https://github.com/user-attachments/assets/280f53ab-d41f-4e86-bb08-ad685d6821e2)
 
 **CHECKING:** Lakukan perbandingan dari 4 algoritma tersebut
@@ -558,6 +565,7 @@ echo ' upstream worker {
 }
 ```
 - 3 Worker
+- 
 ![Screenshot 2024-10-26 235935](https://github.com/user-attachments/assets/805b3d95-58ae-4152-97b9-abad5c958725)
 
 - 2 Worker
@@ -742,4 +750,5 @@ Langkah selanjutnya adalah masuk ke Annie/client lain dengan command `mysql -u r
 - FLUSH PRIVILEGES;
 ```
 Langkah terakhir adalah dengan menjalankan command `mysql –host=10.83.3.4 –port=3306 –user=it40 –password=it40 db_it40 -e “SHOW DATABASES;"` pada Annie.
+
 ![Screenshot 2024-10-27 011457](https://github.com/user-attachments/assets/a3f17b7c-68d2-4ff6-a92c-b0c4f7ee09b6)
